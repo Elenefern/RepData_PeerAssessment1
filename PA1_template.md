@@ -83,7 +83,7 @@ Plot a histogram to show the frequency of amount of steps per day.
 hist(steps_per_day$steps)
 ```
 
-![](figures/Steps_per_day-1.png)<!-- -->
+![](figure/Steps_per_day-1.png)<!-- -->
 
 Calculate and report the mean and median total number of steps taken per day.
 
@@ -119,7 +119,7 @@ Create a time series plot of the 5-minute interval (x-axis) and the average numb
 plot(mean_steps_per_interval$interval, mean_steps_per_interval$steps, type="l", main= "Daily activity pattern", xlab = "Interval", ylab = "Steps")
 ```
 
-![](figures/Daily_activity_pattern-1.png)<!-- -->
+![](figure/Daily_activity_pattern-1.png)<!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -168,7 +168,7 @@ steps_per_day_imputed <- activity_imputed %>% group_by(date) %>% summarise(steps
 hist(steps_per_day_imputed$steps)
 ```
 
-![](figures/Steps_per_day_imputed-1.png)<!-- -->
+![](figure/Steps_per_day_imputed-1.png)<!-- -->
 
 Calculate the mean and median steps per day for the imputed dataframe.
 
@@ -229,4 +229,4 @@ p <- p + facet_grid(day_type~.) + ggtitle("Weekend vs Weekday activity patterns"
 plot(p)
 ```
 
-![](figures/Weekend_vs_weekday_steps-1.png)<!-- -->
+![](figure/Weekend_vs_weekday_steps-1.png)<!-- -->
